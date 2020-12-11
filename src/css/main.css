@@ -60,5 +60,17 @@
 
 /* Begin styling the report items here! */
 .reports {
+  display: grid;
+    margin: 0 auto;
+  grid-column-gap: 30px;
+}
 
+
+/* 769px or larger 3col */
+@media (min-width: 769px) {
+  .reports{ grid-template-columns: repeat(3, 1fr); }
+}
+/* 768px or smaller 2 columns */
+@media (max-width: 768px) {
+  .reports{ grid-template-columns: repeat(2, 1fr); }
 }
